@@ -77,3 +77,5 @@ cd diagnostics-9.3.1
 
 ./diagnostics.sh --host 127.0.0.1 --port 9200
 ```
+
+## IF FAIL, Wait for cluster to be up
