@@ -7,7 +7,9 @@ podman stop es01 es02 es03 2>/dev/null || true
 podman rm -f es01 es02 es03 2>/dev/null || true
 podman network rm elastic 2>/dev/null || true
 podman system prune -a -f
+```
 
+```
 podman network create elastic
 
 sed -i 's/"cniVersion": "1.0.0"/"cniVersion": "0.4.0"/' /etc/cni/net.d/elastic.conflist 2>/dev/null || true
