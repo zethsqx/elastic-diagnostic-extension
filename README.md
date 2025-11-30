@@ -1,4 +1,4 @@
-### Install Java
+### Prepare Environment to bring up the 3-node Cluster
 
 ```
 sudo -i
@@ -12,7 +12,10 @@ podman network create elastic
 
 sed -i 's/"cniVersion": "1.0.0"/"cniVersion": "0.4.0"/' /etc/cni/net.d/elastic.conflist 2>/dev/null || true
 sed -i 's/"cniVersion": "1.0.0"/"cniVersion": "0.4.0"/' ~/.config/cni/net.d/elastic.conflist 2>/dev/null || true
+```
 
+### Deploy up the 3-node Cluster
+```
 podman run -d --name es01 \
   --net elastic \
   -p 9200:9200 \
@@ -57,11 +60,12 @@ podman run -d --name es03 \
   docker.elastic.co/elasticsearch/elasticsearch:8.15.3
 ```
 
-
+### Install Java for the environment
 ```
 apt install -y default-jre
 ```
 
+### Download Diagnostic
 ```
 curl -LO https://github.com/elastic/support-diagnostics/releases/download/v9.3.1/diagnostics-9.3.1-dist.zip
 
