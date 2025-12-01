@@ -1,4 +1,6 @@
-# 🧩 Support Diagnostic Lab 1: We will be using the ECK 101 Workshop Environment as the base environment to complete the hands-on exercises.
+# 🧩 Support Diagnostic Lab 1
+
+We will be using the ECK 101 Workshop Environment as the base environment to complete the hands-on exercises.
 
 ## 🪣 Support Diagnostic Summary
 1. Install a minimal 3-node Elasticsearch cluster within the workshop environment to serve as the target for diagnostics.
