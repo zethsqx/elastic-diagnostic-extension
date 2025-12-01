@@ -5,7 +5,7 @@ We will be using the ECK 101 Workshop Environment as the base environment to com
 ## 🪣 Support Diagnostic Summary
 1. Install a minimal 3-node Elasticsearch cluster within the workshop environment to serve as the target for diagnostics.
 
-2. Install Java (prerequisite) for Support Diagnosticsn - The Support Diagnostics tool requires Java. We will install the appropriate Java runtime on the node where the diagnostic script will be executed.
+2. Install Java (prerequisite) for Support Diagnostics - The Support Diagnostics tool requires Java. We will install the appropriate Java runtime on the node where the diagnostic script will be executed.
 
 3. Download and Run the Support Diagnostic Tool against the Cluster - Once Java is installed, we will download the Elastic Support Diagnostics bundle and execute it to collect cluster information for analysis.
 
